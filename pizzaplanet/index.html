@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  </head>
+  <body ng-app="PizzaPlanetApp">
+    <div class="header">
+      <h1><span>Pizza</span><span>Planet</span></h1>
+    </div>
+
+    <div class="main" ng-controller="MainController">
+      <div class="container">
+        <h1>Specials for {{ today | date }}</h1>
+        
+        <h2>Appetizers</h2>
+        <div class="appetizers row" ng-repeat="appetizers in appetizers">
+          <div class="item col-md-9">
+            <h3 class="name">{{appetizers.name}}</h3>
+            <p class="description">{{appetizers.description}}</p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{appetizers.price | currency}}</p>
+          </div>
+        </div>
+        <h2>Mains</h2>
+        <div class="mains row" ng-repeat="mains in mains">
+          <div class="item col-md-9">
+            <h3 class="name">{{mains.name}}</h3>
+            <p class="description">{{mains.description}}</p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{mains.price | currency}}</p>
+          </div>
+        </div>
+        
+        <h2>Extras</h2>
+        <div class="extras row" ng-repeat="extras in extras">
+          <div class="item col-md-9">
+            <h3 class="name">{{extras.name}}</h3>
+            <p class="description">{{extras.description}}</p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{extras.price | currency}}</p>
+          </div>
+        </div>
+        
+        <h2>Drinks</h2>
+        <div class="drinks row" ng-repeat="drinks in drinks">
+          <div class="item col-md-9">
+            <h3 class="drink">{{drinks.name}}</h3>
+            <p class="description">{{drinks.description}}</p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{drinks.price | currency}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+   
+    <div class="footer">
+    </div>
+    
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+  </body>
+</html>
