@@ -1,0 +1,1069 @@
+* {
+	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+}
+
+:root{
+	--HeightMainContainer: 600em;
+	--HeightOfArticle1Section : 113.5em;
+	--ColorBottonNavBarLeft: white;
+	--Height-share-author : 4em;
+	--HeightArticle1textbox : 108.5em;
+	--HeightOfArticle2Section : 293em;
+	--HeightOfPreFooterSection : 1138px;
+}
+
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+  }
+
+  body::after{
+	content: "";
+	display: block;
+	clear: both;
+  }
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* MASTER FATHER */
+body {
+	width: 100%;
+	height: var(--HeightMainContainer);
+	background-color: white;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/*FATHER OF  -> LEFT-MID-RIGHT NAVBARS*/
+#navbar-container{
+	z-index: 1;
+	position: fixed;
+	height: 49px;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid gray;
+}
+
+/*FATHER OF  -> header-1-container*/
+/*FATHER OF  -> article-1-container*/
+/*FATHER OF  -> header-2-container*/
+/*FATHER OF  -> article-2-container*/
+/*FATHER OF  -> pre-footer*/
+
+#main-container{
+	height: var(--HeightMainContainer);
+	width: 100%;
+	background-color: white;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* LEFT - MID - RIGHT */
+/* NAV BOXES */ 
+#navbar-container div{
+	display: inline-block;
+	height: 50px;
+	width: 33.33%;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* LEFT NAV BOX */ 
+
+#left-box-nav{
+	float: left;
+}
+
+#left-box-nav div{
+	width: 35px;
+	height: 35px;
+	background-color: white;
+}
+
+#burger-item {
+	float: left;
+	margin-left: 23%;
+	margin-top: .5%;
+}
+
+#search-item{
+	float: left;
+	margin-top: .5%;
+}
+
+.fx-btn img{
+	background-color: var(--ColorBottonNavBarLeft);
+	height: 50%;
+	width: 50%;
+}
+
+
+#burger-item button, #search-item button{
+	float: right;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	background-color: white;
+}
+
+.fx-btn img:hover
+{
+	background-color: rgb(203, 203, 204);
+	cursor: pointer;
+}
+
+#spaceandcosmos{
+	float: left;
+	margin-top: .5%;
+	margin-left: 3%;
+}
+
+#left-box-nav #spaceandcosmos {
+	height: 25px;
+	width: 140px;
+	margin-top: 1.5%;
+	background-color: white;
+}
+
+#spaceandcosmos a{
+	font-size: .88em;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
+#spaceandcosmos a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* MID NAV BOX */ 
+/*FATHER OF  -> mid-box-nav div*/
+/*			 -> mid-box-nav img*/
+
+
+#mid-box-nav{
+	float: left;
+}
+
+#mid-box-nav div {
+	height: 27px;
+	background-color:white;
+	margin: 1% 33.33% 1% 33.33%;
+}
+
+#mid-box-nav img {
+	width: 100%;
+	height: 100%;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* RIGHT NAV BOX */ 
+
+#right-box-nav{
+	float: right;
+}
+
+#right-box-nav div {
+	float: right;
+	width: 65px;
+	height: 32px;
+	background-color: white;
+	border-radius: 3px;
+	margin-right: 23%;
+	margin-top: 1.2%;
+}
+
+#right-box-nav button{
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: 100%;
+	background-color:  rgb(80, 138, 182);
+	color: white;
+	border: 0;
+}
+
+#right-box-nav button:hover, #right-box-nav div:hover{
+	cursor: pointer;
+	background-color: rgb(50, 104, 145);
+	border-color: rgb(50, 104, 145);
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* MAIN - CONTENT
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* header-1-container */ 
+/*FATHER OF  -> header-1-title*/
+/*			 -> header-1-img*/
+/*			 -> header-1-cap*/
+
+#header-1-container {
+	display: inline-block;
+	width: 100%;
+	height: 53.5em;
+	background-color: white;	
+}
+
+#header-1-title {
+	width: 100%;
+	height: 10em;
+	margin-top: 50px;
+	background-color: white;
+}
+
+#header-1-title > h1 {
+	margin-left: 35%;
+	margin-right: auto;
+	margin-top: .5%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 35px;
+}
+
+#header-1-img {
+	width: 1024px;
+	height: 576px;
+	margin: auto;
+	background-color: white;
+}
+
+#header-1-img img{
+	width: 100%;
+	height: 100%;
+}
+
+#header-1-cap {
+	width: 1024px;
+	height: 3em;
+	margin: .5% auto .5% auto;
+	background-color: white;	
+}
+
+#header-1-cap p{
+	font-size: 0.875rem;
+	color: #666;
+    line-height: 1.125rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+}
+
+#header-1-cap span{
+	font-size: 0.6875rem;
+    line-height: 16px;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* article-1-container */ 
+/*FATHER OF  -> article-1-items-container*/
+#article-1-container{
+	display: inline-block;
+	width: 100%;
+	height: var(--HeightOfArticle1Section);
+	background-color: white;
+}
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* article-1-items-container */ 
+/*FATHER OF  -> art-1-textbox*/
+/*			 -> editors-pickbox*/
+#article-1-items-container{
+	position: absolute;
+	left: calc(50% - 346px);
+	right: calc(50% - 346px);
+	width: 682.7px;
+	height: var(--HeightOfArticle1Section);
+	background-color: rgb(173, 90, 90);
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* art-1-textbox */ 
+/*FATHER OF  -> author*/
+/*			 -> share*/
+/*			 -> article-1*/
+#art-1-textbox{
+	float: left;
+	width: 100%;
+	height: var(--HeightOfArticle1Section);
+	background-color: white;
+}
+
+#author {
+	float: left;
+	width: 50%;
+	height: var(--Height-share-author);
+	background-color: white;
+}
+
+#author p, #author a {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: .02em;
+	color: #121212;
+	font-family: sans-serif;	
+}
+
+#author a:hover {
+	text-decoration: none;
+}
+
+#share {
+	float: right;
+	width: 50%;
+	height: var(--Height-share-author);
+	background-color: white;
+}
+
+#share img {
+	float: right;
+	position: relative;
+	top: 35%;
+}
+
+#article-1 {
+	float: left;
+	width: 100%;
+	height: var(--HeightArticle1textbox);
+	background-color: white;
+}
+
+#article-1 h3,
+#article-1 p, #article-1 a {
+	font-family: georgia,"times new roman",times,serif;
+	margin-bottom: 20px;
+	font-size: 1.1225rem;
+	line-height: 1.625rem;
+    font-weight: 400;
+    font-style: normal;
+	font-family: georgia,"times new roman",times,serif;
+}
+#article-1 a{
+	text-decoration: none;
+	color: #313e86;
+}
+#article-1 a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	color: #313e86;
+}
+
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* editors-pickbox */ 
+/*FATHER OF  -> editor-info*/
+#editors-pickbox{
+	position: relative;
+	top: calc(50% - 160px);
+	left: calc(50% + 346px);
+	width: 285px;
+	height: 20em;
+	background-color: rgb(136, 73, 73);
+}
+/*
+.box-space{
+	width: 100%;
+	height: calc(50% - 10em);
+	background-color: white;
+}
+*/
+#editor-info{
+	width: 285px;
+	height: 20em;
+	background-color: rgb(67, 139, 202);
+}
+
+#editor-title{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
+
+.editor-column{
+	width: 100%;
+	height: calc(33.33% - 20px);
+	background-color:white;
+}
+
+.editor-column > img {
+	float: left;
+	width: 75px;
+	height: 75px;
+	padding: 0.5%;
+	margin: 0.5%;
+}
+
+.editor-column span, .editor-column a {
+	position: relative;
+	top: 15%;
+	left: 1%;
+	color: #121212;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-decoration: none;
+}
+
+.editor-column a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* header-2-container */ 
+/*FATHER OF  -> header-2-title*/
+/*			 -> header-2-img*/
+/*			 -> header-2-cap*/
+
+#header-2-container {
+	display: inline-block;
+	width: 100%;
+	height: 49.5em;
+	background-color: white;	
+}
+
+#header-2-title {
+	margin: auto;
+	width: 720px;
+	height: 4.5em;
+	background-color: white;
+}
+
+#header-2-title h2 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	font-style: normal;
+	font-family: nyt-cheltenham,georgia,times new roman,times,serif;
+}
+
+#header-2-title p {
+	font-size: .875rem;
+	line-height: 1.125rem;
+	font-weight: 400;
+	font-style: normal;
+	font-family: nyt-cheltenham-sh,georgia,times new roman,times,serif;
+	color: #666;
+}
+
+#header-2-img {
+	position: relative;
+	width: 720px;
+	height: 648px;
+	margin: auto;
+	background-color: darkolivegreen;
+}
+
+#header-2-img img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.header-2-box{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.header-2-sub-box{
+	margin-top: 20%;
+	float: left;
+	width: 25%;
+	height: 25%;
+	background-color: white;
+}
+
+.header-2-sub-box span{
+	font-family: nyt-franklin,arial,helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.header-2-sub-box p{
+	padding: 3px;
+	font-family: nyt-franklin,arial,helvetica,sans-serif;
+	font-size: 12.5px;
+	font-weight: 300;
+	color: black;
+}
+
+
+#header-2-cap {
+	width: 720px;
+	height: 3em;
+	margin: .5% auto .5% auto;
+	background-color: white;	
+}
+
+#header-2-cap hr {
+	background-color: gray;
+	width: 70px;	
+	height: 1px;
+	border: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+#header-2-cap p {
+	font-size: .875rem;
+	line-height: 1.125rem;
+	font-weight: 500;
+	font-style: normal;
+	font-family: nyt-franklin,arial,helvetica,sans-serif;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* article-2-container */ 
+/*FATHER OF  -> article-2-items-container*/
+#article-2-container{
+	display: inline-block;
+	width: 100%;
+	height: var(--HeightOfArticle2Section);
+	background-color: white;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* art-2-textbox */ 
+/*FATHER OF  -> author*/
+/*			 -> share*/
+/*			 -> article-2*/
+/*			 -> art-end*/
+#art-2-textbox{
+	margin: auto;
+	width: 682.7px;
+	height: var(--HeightOfArticle2Section);
+	background-color: white;
+}
+
+#art-2-textbox > p {
+	font-size: 1.1875rem;
+	line-height: 1.8125rem;
+	margin-bottom: 20px;
+}
+
+#art-2-textbox > p > a:hover {
+	cursor: pointer;
+    text-decoration: none;
+}
+
+#youtube {	
+	margin: 0 0 0 6%;
+}
+
+#telescope {
+	width: 600px;
+	height: 501px;
+	margin: 0 auto 0 auto;
+}
+
+#telescope > img {
+	width: 100%;
+	height: 401px;
+}
+
+.fig-cap > p {
+	margin-right: 7px;
+	color: #666;
+	font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+
+.fig-cap > span {
+    font-size: .8rem;
+    letter-spacing: .01em;
+    color: #888;
+}
+
+#art-end {
+	font-family: nyt-franklin,helvetica,arial,sans-serif;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	width: calc(100% - 40px);
+	max-width: 600px;
+	margin: 0 auto 1em;
+	color: #999;
+}
+
+#art-end > span > a {
+	text-decoration: none;
+	color: #999;
+}
+
+#art-end > span > a:hover {
+	text-decoration: underline;
+}
+
+#art-2-textbox button {
+	float: left;
+	font-weight: bold;
+	font-size: 11px;
+	width: 330px;
+	height: 36px;
+	background-color:rgb(80, 138, 182);
+	border: 1px solid rgb(50, 104, 145);
+	color: white;
+	border: 0;
+	border-radius: 5px;
+}
+
+#art-2-textbox button:hover {
+	cursor: pointer;
+	background-color: rgb(50, 104, 145);
+}
+
+#art-2-textbox > img {
+	float: right;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* pre-footer-container */ 
+/*FATHER OF  -> prefooter-section*/
+#pre-footer-container{
+	width: 100%;
+	height: var(--HeightOfPreFooterSection);
+	background-color: white;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* prefooter-section */ 
+/*FATHER OF  -> morespace-pf-box*/
+/*			  -> mostpopular-pf-box*/
+/*			  -> editorspick-pf-box*/
+#prefooter-section{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1294px;
+	height: var(--HeightOfPreFooterSection);
+	background-color: white;
+}
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* morespace-pf-box */ 
+/*FATHER OF  -> */
+#morespace-pf-box{
+	float: left;
+	width: 69.9%;
+	height: 69%;
+	padding: 0;
+	margin: 0;
+}
+
+#morespace-title{
+	float: left;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
+
+#morespace-title hr{
+	color: black;
+	background-color: #121212;
+	height:  2.5px;
+}
+
+#morespace-title a{
+	float: left;
+	font-size: .975rem;
+    line-height: 1.0625rem;
+    font-weight: 700;
+    font-style: normal;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	text-decoration: none;
+	color: black;
+	margin-left: 5px;
+}
+
+#morespace-title a:hover{
+	text-decoration: underline;
+}
+
+#morespace-img-box{
+	float: left;
+	width: 100%;
+	height: calc(100% - 60px);
+	background-color: white;
+}
+
+.morespace-column {
+	float: left;
+	width: 32.25%;
+	height: 49%;
+	padding: 0.5%;
+	margin: 0.5%;
+	background-color:white;
+}
+
+.morespace-column > img {
+	width: 273px;
+	height: 182px;
+}
+
+.morespace-column > p {
+	float: right;
+	color: white;
+	font-size: 0.6em;
+	line-height: 1.23em;
+	margin: 3px 6px 3px 0;
+}
+
+.morespace-column > a {
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+
+.morespace-column > a:hover {
+	color: rgb(102, 102, 102);
+}
+
+.morespace-column > h4 {
+	float: left;
+	letter-spacing: 0.3px;
+	color: rgb(153, 153, 153);
+	font-weight: 500;
+	font-size: 0.75rem;
+	line-height: 2rem;
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* mostpopular-pf-box */ 
+/*FATHER OF  -> */
+#mostpopular-pf-box{
+	float: right;
+	width: 30%;
+	height: 100%;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+#title-mp-box{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
+
+
+#title-mp-box hr{
+	color: black;
+	background-color: black;
+	height:  2.5px;
+}
+
+#title-mp-box h2{
+	margin-left: 5px;
+	font-size: 1.0625rem;
+    margin-bottom: 10px;
+    line-height: 1.0625rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+}
+
+.text-mp-box{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+
+.text-mp-box hr{
+	color: rgb(172, 172, 172);
+	background-color: rgb(172, 172, 172);
+	height:  2.5px;
+}
+
+.text-mp-box h2{
+	font-size: .975rem;
+	padding: 5px;
+	margin-left: 7px;
+	line-height: 1.4375rem;
+	font-style: normal;
+	font-weight: 110;
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+}
+
+.text-mp-box a{
+	text-decoration: none;
+	color: black;
+}
+
+.text-mp-box a:hover{
+	text-decoration: none;
+	color:  rgb(172, 172, 172);
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* editorspick-pf-box */ 
+/*FATHER OF  -> editorspick-title*/
+/*			 -> editorspick-column*/
+#editorspick-pf-box{
+	float: left;
+	width: 69.9%;
+	height: 30.9%;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+#editorspick-title{
+	float: left;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
+
+#editorspick-title hr{
+	color: black;
+	background-color: #121212;
+	height:  2.5px;
+}
+
+#editorspick-title > h3 {
+	float: left;
+	font-size: .975rem;
+    line-height: 1.0625rem;
+    font-weight: 700;
+    font-style: normal;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	text-decoration: none;
+	color: black;
+	margin-left: 5px;
+}
+
+#editorspick-title h3:hover{
+	text-decoration: underline;
+}
+
+.editorspick-column {
+	float: left;
+	width: 32.25%;
+	height: 80%;
+	padding: 0.5%;
+	margin: 0.5%;
+	background-color: white;
+}
+
+.editorspick-column > img {
+	width: 273px;
+	height: 182px;
+}
+
+.editorspick-column > p {
+	float: right;
+	color: rgb(153, 153, 153);
+	font-size: 0.6em;
+	line-height: 1.23em;
+	margin: 3px 6px 3px 0;
+}
+
+.editorspick-column > a {
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+
+.editorspick-column > a:hover {
+	color: rgb(102, 102, 102);
+}
+
+.editorspick-column > h4 {
+	float: left;
+	letter-spacing: 0.3px;
+	color: rgb(153, 153, 153);
+	font-weight: 500;
+	font-size: 0.75rem;
+	line-height: 2rem;
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* footer */ 
+/*FATHER OF  -> footer-container*/
+footer {
+	width: 100%;
+	height: 440px;
+	background-color: white;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* footer-container */ 
+/*FATHER OF  -> morespace-pf-box*/
+/*			  -> mostpopular-pf-box*/
+/*			  -> editorspick-pf-box*/
+#footer-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1294px;
+	height: 440px;
+	background-color: white;
+}
+
+#footer-title {
+	float:left;
+	width: 100%;
+	height: 60px;
+	background-color: white;	
+}
+
+#footer-title hr{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	color: rgb(146, 146, 146);
+	background-color: rgb(226, 226, 226);
+	height: 4px;
+}
+
+#footer-title img{
+	margin-top: 5px;
+	margin-left: 2.5%;
+}
+
+#footer-main {
+	float: left;
+	width: 100%;
+	height: calc(90% - 60px);
+	background-color: white;
+}
+
+.footer-sub {
+	float: left;
+	width: 16.46%;
+	height: 100%;
+	padding: 0.1%;
+	margin: 0.1%;
+	background-color: white;
+}
+
+.footer-sub ul{
+	margin-top: 20px;
+	margin-left: 32px;
+	list-style-type:none;
+}
+
+.footer-sub h2{
+	text-align: left;
+	margin-bottom: 8px;
+	font-size: 0.7625rem;
+    line-height: 0.6875rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-sub > ul > li{
+    line-height: 1rem;
+	margin-bottom: 5px;
+}
+
+.footer-sub > ul > li > a{
+	font-size: 0.875rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+.footer-sub > ul > li > a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.big-foot > img {
+	margin-right: 3px;
+}
+
+#footer-end {
+	float: left;
+	width: 100%;
+	height: calc(10% - 60px);
+	background-color: white;
+}
+
+#footer-end > p {
+	margin-top: 15px;
+	font-size: 0.6875rem;
+	line-height: 15px;
+	color: #999;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	border-top: 1px solid #f3f3f3;
+	padding-top: 5px;
+}
+
+.footer-fixed {
+	background-color:white;
+	bottom: 0;
+	border-top: 1px solid gray;
+	height: calc(55px - 1px);
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}  
+
+.footer-fixed p {
+	font-size: 15px;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	letter-spacing: 0.05em;
+	line-height: 0.6875rem;
+	margin: 1.5% 0 1% 0;
+}
+
+.footer-fixed img {
+	bottom: 55%;
+	left: 32%;
+	position: relative;
+}
