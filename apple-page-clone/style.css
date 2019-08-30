@@ -1,0 +1,251 @@
+* {
+	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+}
+
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: block;
+  }
+
+body::after{
+	content: "";
+	display: block;
+	clear: both;
+  }
+
+/* BODY parent */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+/* nav Parent */
+nav {
+	height: 36px;
+	position: absolute;
+	top: 80px;
+	width: 100%;
+}
+
+#nav-container {
+	background-image: linear-gradient(#828282 0%, #484848 50%, #383838 51%, #575757 100%);
+	border-radius: 5px;
+	margin: auto;
+	width: 980px;
+}
+
+.navbar {
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	overflow: hidden;
+}
+  
+.navbar li {
+	border-right: 1px solid gray;
+	float: left;
+}
+
+/* csslint ignore:start */
+.navbar li a {
+	color: white;
+	display: block;
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	height: 36px;
+	padding: 7.55px 34.75px 0 34.75px;
+	text-decoration: none;
+}
+
+.navbar li a:hover { /* csslint allow: known-properties, important */
+	background-color: #111111; 
+}
+
+.navbar label input {
+	background: url("images/search-icon.png") top 5px left 7px no-repeat; /* csslint allow: known-properties, important */
+	background-color: rgba(255, 255, 255, 0.096); /* csslint allow: known-properties, important */
+	background-size: 12px; /* csslint allow: known-properties, important */
+	border-radius: 12px;
+	border: 1px solid transparent;
+	border-bottom: 0.5px solid rgb(156, 155, 155);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.758);
+	height: 22px;
+	margin-bottom: 4px;
+	padding: 1px 0 1px 23px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	width: 106px;
+}
+
+/* csslint ignore:end */
+.navbar label input:focus {
+	background-color: white !important;
+	background: url("images/search-icon-black.png") top 3px left 4px no-repeat;
+	background-size: 17px;
+	border: none;
+	outline: none;
+	width: 170px;
+}
+
+/* article Parent */
+article {
+	height: 667px;
+    width: 100%;
+}
+
+#header-img {
+	background-image: url("images/your_verse_hero.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 667px;
+	margin: auto;
+	width: 1440px;
+}
+
+.main-msg {	
+	font-size: 32px;
+	height: 337px;	
+	position: relative;
+	text-align: center;
+	top: 225px;
+	width: 1440px;	
+}
+
+/* csslint ignore:start */
+.main-msg h1 {
+	color: white;
+	font-size: 2em;
+    font-weight: thin;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-msg h1:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.main-msg h3:first-of-type {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: bolder;
+	line-height: 1.4em;
+}
+  
+.main-msg h3:nth-of-type(2) {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: bolder;
+	left: 605px;
+	line-height: 1.4em;
+}
+
+.main-msg h3:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.main-msg a:first-of-type {
+	color: white;
+	font-size: 25px;
+	font-weight: 100;
+	text-decoration: none;
+}
+
+/* csslint ignore:end */
+.main-msg p i {
+	font-size: 1em;
+	left: 990px;
+	position: absolute;
+	top: 180px;
+}
+
+.main-msg p:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.main-msg p a:hover {
+	text-decoration: underline;
+}
+
+/* aside Parent */
+aside {
+	width: 100%;
+	height: 200px;
+}
+
+#promo {
+	margin: auto;
+	width: 1440px;
+	height: 200px;
+}
+
+/* csslint ignore:start */
+.promo-pic {
+	float: left;
+	height: 200px;
+	margin: 0 1px 0 1px;
+	padding: 0 1px 0 1px;
+	width: 356px;
+}
+
+/* csslint ignore:end */
+.promo-pic > img {
+	height: 100%;
+	width: 100%;
+}
+
+/* footer Parent */
+footer {
+	height: 90px;
+	width: 100%;
+}
+
+.foot-container {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	height: 90px;
+	margin: auto;
+	width: 980px;
+}
+
+.foot-info {
+	color: rgb(170, 168, 168);
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 2.5em;
+	margin-top: 22px;
+}
+
+.foot-info a {
+	text-decoration: none;
+}
+
+.foot-info a:hover {
+	text-decoration: underline;
+}
+
+#foot-left-1 {
+	height: 27px;
+	float: left;
+	width: 480px;
+}
+
+#foot-right-1 {
+	float: left;
+	height: 27px;
+	width: 500px;
+}
+
+#foot-left-2 {
+	clear: both;
+	height: 27px;
+	width: 480px;
+}
