@@ -110,7 +110,7 @@ function updateLocalStorage() {
 }
 
 myLibrary.push(new Game('Silent Hill', 'Konami', "Playstation", "Horror", 1999, "Played"));
-updateLocalStorage(myLibrary[1]);
+updateLocalStorage(myLibrary[0]);
 myLibrary.push(new Game('Mario Kart', 'Nintendo', "Nintendo", "Action", 1992, "Played"));
 updateLocalStorage(myLibrary[1]);
 render();
