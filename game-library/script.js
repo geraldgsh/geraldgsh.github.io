@@ -109,6 +109,12 @@ function updateLocalStorage() {
   window.localStorage.setItem('library', JSON.stringify(myLibrary))
 }
 
+myLibrary.push(new Game('Silent Hill', 'Konami', "Playstation", "Horror", 1999, "Played"));
+updateLocalStorage(myLibrary[1]);
+myLibrary.push(new Game('Mario Kart', 'Nintendo', "Nintendo", "Action", 1992, "Played"));
+updateLocalStorage(myLibrary[1]);
+render();
+
 function openForm() {
   document.getElementById("popupForm").style.display="block";
 }
