@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Library</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">BOOKSHELF</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              Add a Book
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="wrapper">
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col- ">
+            <table class="table table-striped">
+              <thead>
+                <tr id="renderTable">
+                  <th scope="col">Title</th>
+                  <th scope="col">Page</th>
+                  <th scope="col">Author</th>
+                  <th scope="col">Genre</th>
+                  <th scope="col">Year</th>
+                  <th scope="col">Read?</th>
+                  <th scope="col">Remove</th>
+                </tr>
+              <tbody id="lib_entry"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add a new book</h5>
+        </div>
+        <div class="modal-body">
+
+          <!--- bootstrap clone  -->
+          <form>
+
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Title">
+            </div>
+
+            <div class="form-group">
+              <label for="pages">Pages</label>
+              <input type="number" class="form-control" name="numPages" id="numPages" placeholder="Number of pages">
+            </div>
+
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input type="text" class="form-control" name="author" id="author" placeholder="Author">
+            </div>
+
+            <div class="form-group">
+              <label for="year">Year</label>
+              <input type="date" name="year" id="year" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="genre">Genre</label>
+              <select name="genre" id="genre" class="form-control">
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="classics">Classics</option>
+                <option value="comic-book">Comic Book</option>
+                <option value="mystery">Mystery</option>
+                <option value="detective">Detective</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="fiction">Fiction</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <label for="read">Not read?</label>
+                <select name="genre" id="read" class="form-control">
+                  <option value="Read">Read</option>
+                  <option value="Not-Read">Not-Read</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+          <!-- end of the bootstrap forms -->
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary add" id="add" data-dismiss="modal">Click to add</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
