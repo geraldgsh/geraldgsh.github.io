@@ -1,0 +1,3 @@
+[submodule "restaurant-page/dist"]
+	path = restaurant-page/dist
+	url = https://github.com/geraldgsh/restaurant-page.git
