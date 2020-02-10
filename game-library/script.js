@@ -26,6 +26,10 @@ function updateLocalStorage(arr) {
   window.localStorage.setItem('library', JSON.stringify(arr));
 }
 
+function closeForm() {
+  document.getElementById('popupForm').style.display = 'none';
+}
+
 const addGameToLibrary = () => {
   // to stop blank form submission
   const title = document.getElementById('title').value;
@@ -124,8 +128,4 @@ render();
 // eslint-disable-next-line no-unused-vars
 function openForm() {
   document.getElementById('popupForm').style.display = 'block';
-}
-
-function closeForm() {
-  document.getElementById('popupForm').style.display = 'none';
 }
